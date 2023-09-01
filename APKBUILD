@@ -1,4 +1,3 @@
-# Maintainer: bropro40@github.com
 pkgname=hyprland
 pkgver=0.29.0
 pkgrel=0
@@ -35,7 +34,7 @@ makedepends="
 	"
 subpackages="$pkgname-doc $pkgname-dev"
 source="$pkgname-$pkgver.tar.gz::https://github.com/hyprwm/Hyprland/releases/download/v$pkgver/source-v$pkgver.tar.gz
-	wlroots.patch
+	execinfo.patch
 	gcc13.patch
 	no-werror.patch
 	"
@@ -70,8 +69,7 @@ dev() {
 
 sha512sums="
 26008da98049f85f14be821d73cc42f4ec3e59669375ff78e633d187b15abf1eeb51e5f25d8a12d3ddde14de8d83aa3fbed23a9713bf086b30620f0a93320ce5  hyprland-0.29.0.tar.gz
-# 25edcd6b2e3945117c5b3b6ee2fdac3666afd31a10ce0658e078dec982aa307798a583d36950c6151dc709cfec31eadf7e3d8d2ad439d2fd246dc02707eeb3ab  execinfo.patch
-0df8586ce1d87655ed8f14281e207d768eb124c9af6544c66dccedc41a442365eb9c9d871bf5c9757e8f7332057e4da582cdcff24410f7c6823a619a10095104  wlroots.patch
+8e22c3d1f450bf9221f9de868f23b22d705f9c97132234e740da6160b142cceeffabc15b4b814a88f5197a6bb0ad0f96cdebfeb1f2c4272839f55db49e6cceae execinfo.patch
 a82391408f1d86c440400e80ea4b66a9376851cbb4425b748ab272f5227abfed1a74c6f0fdc26a12b9288bd9493b94cf78891bbbbfd816a0079b2c9037d291d9  gcc13.patch
 042ff7d323b0d16feca10e45dbf0b1eac41daea1f03e8af40d205da35fafa8b8fd0ae21a1dcdea924ad6c39a68bd8ee72ebde014192b7607e983c3d3e66be76a  no-werror.patch
 "
